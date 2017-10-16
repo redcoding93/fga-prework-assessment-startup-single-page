@@ -4,17 +4,55 @@
   padding: 0px;
   box-sizing: border-box;
 }
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/*article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+} */*/
+body {
+  font-family: helvetica;
+}
+.container {
+  width: 1366px;
+  margin: 0 auto;
+}
+
 header {
-  background: url("../img/Background-image-faded.png");
+  background: url("assets/img/Background-image-faded.png");
   background-size: 100%;
 }
 header ul {
-  width: 25%;
+  width: 40%;
   display: inline-block;
   list-style: none;
   font-size: 10px;
   vertical-align: top;
   margin-left: 700px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.main-header {
+  margin-bottom: 100px;
 }
 header a {
   color: black;
@@ -22,39 +60,106 @@ header a {
 }
 header li {
 display: inline-block;
+padding-top: 20px;
+padding-left: 10px;
 }
 #sign-up {
-  width: 10%;
+  width: 8%;
   display: inline-block;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 50px;
 }
-#follow {
-  width: 10%;
+.interest a {
+  color: white;
 }
 .start-up {
   width: 80px;
-}
-.header-main {
-  width: 25%;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .header-sub, .interest, .service-intro, .testimonial{
   text-align: center;
 }
+.header-sub h1 {
+  font-size: 40px;
+  font-weight: normal;
+  font-family: helvetica;
+  margin-bottom: 15px;
+}
+.header-sub p {
+  margin-bottom: 150px;
+}
+.header-sub h5 {
+  font-weight: normal;
+  color: grey;
+  margin-bottom: 20px;
+}
+.client-logo {
+  width: 150px;
+}
+.interest {
+  height: 170px;
+}
+.interest h3, .interest h4 {
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+.interest h4 {
+  font-size: 12px;
+  font-weight: normal;
+}
+.interest h3 {
+  padding-top: 15px;
+}
+.interest a {
+  position: absolute;
+  right: 0;
+  margin-right: 35px;
+  margin-bottom: 10px;
+}
+.follow {
+  margin-bottom: 40px;
+}
+.service-intro {
+  margin-top: 60px;
+}
+.service-intro p {
+  margin-bottom: 100px;
+  margin-top: 10px;
+}
  .testimonial {
    text-align: left;
+   padding-bottom: 20px;
  }
- #our-client, #client-intro {
-   text-align: center;
-   margin-bottom: 20px;
- }
+.price h1 {
+  font-weight: normal;
+}
+.price p {
+  font-size: 12px;
+}
  .price {
    text-align: center;
    margin-bottom: 30px;
+ }
+ .faded {
+   color: lightgrey;
  }
 .btn {
   padding: 7px;
   border-radius: 20px;
   text-align: center;
   background-color: #454B54;
+  text-decoration: none;
+  font-weight: normal;
+}
+.start a {
+  color: white;
+  font-weight: lighter;
 }
 .follow {
   margin-top: 20px;
@@ -66,8 +171,8 @@ display: inline-block;
 .phone {
   margin-left: 525px;
 }
-.change {
-  width: 20%;
+.change-1, .change-2 {
+  
   display: inline-block;
 }
 /*.service {
@@ -77,35 +182,123 @@ display: inline-block;
 .teammate {
   margin-left: 50px;
 }
+.plans h3 {
+  font-size: 25px;
+  font-weight: normal;
+}
+.plans h4 {
+  font-size: 14px;
+  font-weight: normal;
+  border-bottom: 1px solid #C7D7E2;
+  margin-bottom: 5px;
+}
 .plans {
   text-align: center;
   width: 20%;
   display: inline-block;
   margin-left: 120px;
+  margin-bottom: 57px;
+  line-height: 30px;
 }
 .plans li {
   list-style: none;
+  font-size: 12px;
+}
+.price {
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 .start {
   margin-top: 20px;
 }
+#grey {
+  color: #95989A;
+}
 .testimonial {
   text-align: center;
+  height: 400px;
+}
+.testimonial h1 {
+  margin-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.bio {
+  margin-bottom: 5px;
+}
+.face-logo {
+  background-color: white;
+  border-radius: 75%;
+  padding: 25px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.top-quote {
+  position: absolute;
+  right: 0;
+  margin-right: 60px;
+}
+.bottom-quote {
+  position: absolute;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+.ellipses {
+  margin-top: 20px;
+}
+#client-title {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: 30px;
+}
+#client-intro {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 35px;
 }
 .clients {
   width: 10%;
+  height: 60px;
   margin-left: 70px;
+  margin-top: 20px;
   display: inline-block;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+hr {
+  border-top: dotted 1px #C7D7E2;;
+  margin-top: 80px;
+}
+.team h1 {
+  margin-top: 80px;
+  font-weight: normal;
+  font-family: helvetica;
+}
+.team p {
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 .member {
   width: 20%;
   display: inline-block;
   margin: 30px;
+  border-radius: 10px;
+
+}
+.member-contact {
+  background-color: #454B54;
+  color: white;
+}
+.social {
+  margin-left: 220px;
 }
 .member li {
   list-style: none;
-  text-align: center;
-  margin-left: 30px;
+  text-align: left;
+  margin-left: 10px;
 }
 .team h1, .team p {
   text-align: center;
@@ -113,15 +306,92 @@ display: inline-block;
 form {
   border: solid 1px black;
   width: 300px;
+  background-color: #C7D7E2;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 .map-form {
-  padding-left: 10px;
+  padding-left: 140px;
+  padding-right: 140px;
   margin-top: 25px;
-  height: 300px;
+  height: 400px;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 50%;
+  opacity: 0.7;
 }
-footer li {
-  width: 15%;
+.contact-form {
+  background: url(../img/map.png);
+}
+#message {
+  padding-bottom: 120px;
+}
+.message-btn {
+  margin-left: 265px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #454B54;
+  color: white;
+  margin-top: 10px;
+}
+.menu {
+width: 8%;
+display: inline-block;
+list-style: none;
+margin-left: 150px;
+margin-right: -140px;
+font-family: helvetica;
+font-size: 12px;
+line-height: 20px;
+}
+.menu li {
+  list-style: none;
+}
+.menu h5 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.footer-info {
+  width: 20%;
   display: inline-block;
+  margin-left: 80px;
+  font-family: helvetica;
+  font-size: 12px;
+  margin-bottom: 45px;
+  margin-top: 70px;
+}
+.footer-info li , .footer-info h5{
+  list-style: none;
+}
+footer ul{
+  display: inline-block;
+  list-style: none;
+}
+footer {
+  background-color: #4F555E;
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#footer-logo {
+  width: 45%;
+}
+#privacy {
+  margin-left: 250px;
+  padding-left: 200px;
+}
+.copyright  {
+  width: 40%;
+  display: inline-block;
+  font-size: 12px;
+}
+.copyright li {
+  text-align: right;
 }
