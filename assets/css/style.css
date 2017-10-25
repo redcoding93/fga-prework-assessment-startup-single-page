@@ -1,5 +1,5 @@
 * {
-  border: 1px solid transparent;
+  border: 1px solid red/*transparent*/;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -31,9 +31,10 @@ footer, header, hgroup, menu, nav, section {
 } */
 body {
   font-family: helvetica;
+
 }
 .container {
-  width: 1366px;
+  /*width: 1366px;*/
   margin: 0 auto;
 }
 
@@ -47,9 +48,12 @@ header ul {
   list-style: none;
   font-size: 10px;
   vertical-align: top;
-  margin-left: 700px;
+  margin-left: 480px;
   padding-left: 10px;
   margin-right: 10px;
+}
+.logo {
+  padding-top: 10px;
 }
 .main-header {
   margin-bottom: 100px;
@@ -61,7 +65,8 @@ header a {
 header li {
 display: inline-block;
 padding-top: 20px;
-padding-left: 10px;
+padding-left: 15px;
+padding-right: 10px;
 }
 #sign-up {
   width: 8%;
@@ -131,13 +136,32 @@ padding-left: 10px;
   background-color: #C7D7E2;
 }
 .phone {
-  margin-left: 550px;
+  margin-left: 500px;
 }
-.terminal, .solution, .config, .design {
-  padding: 10px;
+.terminal, .solution, .config {
+  /*padding: 10px;*/
   border-radius: 50%;
   box-shadow: 0 0 0 1px #000;
   overflow: hidden;
+  width: 60px;
+}
+.service-img-wrapper {
+  border-radius: 50%;
+  /*position: relative;*/
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  /*padding: 15px;*/
+  display: inline-block;
+  /*margin-bottom: -25px;
+  margin-left: 50px;*/
+}
+.service-text-right {
+  display: inline-block;
+  margin-left: 200px;
+  padding-right: -75px;
+  margin-top: -210px;
+  margin-bottom: -30px;
 }
 .terminal {
   /*margin-left: 410px;
@@ -158,6 +182,48 @@ padding-left: 10px;
   margin-top: 30px;
   margin-right: -100px;
   margin-top: -40px;
+}
+.design-line {
+  margin-left: -150px;
+  margin-top: -290px;
+  margin-bottom: -10px;
+}
+.design {
+  margin-left: 10px;
+}
+.pen-img-bottom, .pen-top {
+  display: block;
+  margin: 0 auto;
+  /*position: absolute;*/
+  /*width: 10%;*/
+  /*margin-bottom: -80px;
+  margin-left: 45px;
+  margin-top: -85px;
+  margin-bottom: 10px;*/
+}
+.pen-top {
+  display: block;
+  /*position: absolute;
+  top: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;*/
+}
+.config-line {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: -60px;
+}
+.config {
+  margin: 0 auto;
+  display: inline-block;
+  /*margin-left: 100px;*/
+  /*margin-top: 15px;*/
+  /*border-radius: 50%;
+  position: relative;
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  padding: 15px;*/
 }
 .follow {
   margin-bottom: 40px;
@@ -194,16 +260,23 @@ padding-left: 10px;
    position: relative;
  }
 .change-3, .change-4 {
-  width: 45%;
+  width: 39%;
   text-align: left;
 }
 .change-2 p, .change-2 h2 {
   margin-left: 150px;
 }
-.change-3 p, .change-3 h2, .change-4 p, .change-4 h2 {
-  width: 40%;
-  margin-left: 150px;
+.change-3 p, .change-3 h2 {
+  width: 75%;
+  margin-left: 50px;
+  vertical-align: top;
 }
+.change-4 p, .change-4 h2 {
+  width: 75%;
+}
+/*.change-4 p, .change-4 h2 {
+  margin-right: 10px;
+}*/
 /*.change-3 p .change-3 h2 {
   margin-left: 80px;
 }*/
@@ -212,43 +285,14 @@ padding-left: 10px;
   height: 200px;
 }*/
 .change-3 {
-  margin-left: 800px;
+  margin-left: 700px;
   margin-top: -550px;
 }
 .change-4 {
-  margin-left: 800px;
+  margin-left: 755px;
   margin-top: -300px;
 }
-.design-line {
-  margin-left: -150px;
-  margin-top: -300px;
-  margin-bottom: 25px;
-}
-.design {
-  margin-left: 10px;
-}
-.pen-img {
-  position: relative;
-  width: 10%;
-  margin-bottom: -80px;
-  margin-left: 45px;
-  margin-top: -85px;
-  margin-bottom: 10px;
-}
-.pen-top {
-  position: absolute;
-  top: 0;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-.config-line {
-  position: absolute;
-  margin-left: -100px;
-}
-.config {
-  margin-left: 67px;
-  margin-top: -40px;
-}
+
  .testimonial {
    text-align: left;
    padding-bottom: 20px;
