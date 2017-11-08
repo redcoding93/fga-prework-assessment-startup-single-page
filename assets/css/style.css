@@ -1,5 +1,5 @@
 * {
-  border: 1px solid red/*transparent*/;
+  border: 1px solid transparent;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -141,38 +141,57 @@ padding-right: 10px;
 }
 #config-line {
   position: absolute;
-  top: 280px;
-  right: 470px;
+  top: 300px;
+  right: 460px;
 }
 #solution-line {
   position: relative;
-  left: 390px;
-  top: -15px;
+  left: 280px;
+  top: -30px;
 }
 #develop-line {
   position: relative;
-  left: 380px;
-  top: -10px;
+  left: 280px;
+  top: -25px;
+}
+#design-line {
+  position: absolute;
+  top: 65%;
+  right: 33%;
 }
 #service {
   position: relative;
 }
 #service-quad-1 {
-  margin-bottom: 75px;
+  margin-bottom: 85px;
+  margin-left: 130px;
+}
+#service-quad-2 {
+  margin-left: 135px;
 }
 #service-quad-3 {
-  margin-bottom: 200px;
+  margin-bottom: 170px;
+  margin-right: 40px;
+  margin-left: -55px;
 }
+#service-quad-4 {
+  display: inline-block;
+}
+
 .service-desc {
-  width: 75%;
+  width: 70%;
   display: inline-block;
   vertical-align: top;
 }
 .service-img {
-  width: 20%;
+  /*width: 25%;*/
   display: inline-block;
   vertical-align: top;
+  /*margin-right: 20px;*/
 }
+/*.service-img img {
+  margin-left: 15px;
+}*/
 .service-intro {
   margin-top: 60px;
 }
@@ -197,13 +216,6 @@ padding-right: 10px;
   margin: 0 auto;
 }
 
-.terminal, .solution, .config {
-  /*padding: 10px;*/
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px #000;
-  overflow: hidden;
-  width: 60px;
-}
 .service-img-wrapper {
   border-radius: 50%;
   border: 1px solid black;
@@ -218,76 +230,11 @@ padding-right: 10px;
   margin-top: -210px;
   margin-bottom: -30px;
 }
-.terminal {
-  /*margin-left: 410px;
-  margin-bottom: 210px;*/
-  position: relative;
-  right: 0;
-  margin-top: -65px;
-  margin-bottom: 60px;
-  margin-left: 312px;
-}
-.change-1 {
-  margin-bottom: 70px;
-}
-.develop-arrow {
-  /*margin-bottom: 70px;/*/
-  position: absolute;
-  right: 0;
-  margin-top: 30px;
-  margin-right: -100px;
-  margin-top: -40px;
-}
-.design-line {
-  margin-left: -150px;
-  margin-top: -290px;
-  margin-bottom: -10px;
-}
-.design {
-  margin-left: 10px;
-}
-.pen-img-bottom, .pen-top {
-  display: block;
-  margin: 0 auto;
-  /*position: absolute;*/
-  /*width: 10%;*/
-  /*margin-bottom: -80px;
-  margin-left: 45px;
-  margin-top: -85px;
-  margin-bottom: 10px;*/
-}
-.pen-top {
-  display: block;
-  /*position: absolute;
-  top: 0;
-  margin-bottom: 10px;
-  margin-left: 10px;*/
-}
-.config-line {
-  position: absolute;
-  margin-top: 40px;
-  margin-left: -60px;
-}
-.config {
-  margin: 0 auto;
-  display: inline-block;
-  /*margin-left: 100px;*/
-  /*margin-top: 15px;*/
-  /*border-radius: 50%;
-  position: relative;
-  border: 1px solid black;
-  width: 80px;
-  height: 80px;
-  padding: 15px;*/
-}
+
 .follow {
   margin-bottom: 40px;
 }
 
- .testimonial {
-   text-align: left;
-   padding-bottom: 20px;
-}
 .solution-line {
   margin-left: 450px;
   margin-top: -100px;
@@ -356,6 +303,10 @@ padding-right: 10px;
 }
 #grey {
   color: #95989A;
+}
+ .testimonial {
+   text-align: left;
+   padding-bottom: 50px;
 }
 .testimonial {
   text-align: center;
@@ -430,7 +381,6 @@ hr {
   display: inline-block;
   margin: 30px;
   border-radius: 10px;
-
 }
 .member-contact {
   background-color: #454B54;
@@ -463,9 +413,8 @@ input[type=text] {
 .map-form {
   padding-left: 140px;
   padding-right: 140px;
-  margin-top: 25px;
   height: 400px;
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 20px;
   width: 50%;
   opacity: 0.7;
